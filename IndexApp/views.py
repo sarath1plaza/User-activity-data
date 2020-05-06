@@ -4,8 +4,9 @@ from rest_framework import permissions
 from IndexApp.serializers import membersSerializer
 from UserActivity.pagination import CustomPagination
 
+# Return response- User activity details
 
-class MemberViewSet(viewsets.ModelViewSet):
+class MemberViewSet(viewsets.ModelViewSet): 
     queryset = Members.objects.all()
     serializer_class = membersSerializer
     pagination_class = CustomPagination

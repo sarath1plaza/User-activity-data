@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'IndexApp.apps.IndexappConfig',
-    'rest_framework'
+    'rest_framework' # Building Web APIs using Django REST framework
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS':
-         'UserActivity.pagination.CustomPagination'
+         'UserActivity.pagination.CustomPagination'  # Support for customizable pagination styles.
 }
 
 MIDDLEWARE = [
